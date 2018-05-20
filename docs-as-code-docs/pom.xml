@@ -68,7 +68,7 @@
                         </goals>
                         <configuration>
                             <sourceDocumentName>index.adoc</sourceDocumentName>
-                            <backend>html</backend>
+                            <backend>html5</backend>
                             <doctype>book</doctype>
                         </configuration>
                     </execution>

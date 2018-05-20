@@ -40,20 +40,22 @@ public class UserControllerTest {
     @LocalServerPort
     private int port;
 
+    // tag::tips_and_trick_setup[]
     @Before
     public void setUp() {
         this.documentationSpec = new RequestSpecBuilder()
             .addFilter(documentationConfiguration(this.restDocumentation)
             .operationPreprocessors()
                 .withRequestDefaults(
-                    modifyUris().scheme("http").host("localhost").port(8080),
-                    removeHeaders("Host", "Content-Length", "Date", "Transfer-Encoding"),
-                    prettyPrint())
+                    modifyUris().scheme("http").host("localhost").port(8080), // <1>
+                    removeHeaders("Host", "Content-Length", "Date", "Transfer-Encoding"), // <2>
+                    prettyPrint()) // <3>
                 .withResponseDefaults(
                     removeHeaders("Host", "Content-Length", "Date", "Transfer-Encoding"),
                     prettyPrint()))
             .build();
     }
+    // end::tips_and_trick_setup[]
 
     @Test
     public void createUser() {

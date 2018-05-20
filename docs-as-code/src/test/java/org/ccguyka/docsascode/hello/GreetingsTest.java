@@ -49,14 +49,15 @@ public class GreetingsTest {
             .build();
     }
 
+    // tag::greeting[]
     @Test
     public void greeting() {
         given(this.documentationSpec)
             .accept("application/json")
-            .filter(document("greeting",
-                responseFields(
-                fieldWithPath("id").description("ID"),
-                fieldWithPath("content").description("Content"))))
+            .filter(document("greeting", // <1>
+                responseFields( // <2>
+                    fieldWithPath("id").description("ID"),
+                    fieldWithPath("content").description("Content"))))
         .when()
             .port(this.port)
             .get("/greeting")
@@ -65,5 +66,6 @@ public class GreetingsTest {
             .assertThat()
             .statusCode(is(200));
     }
+    // end::greeting[]
 
 }

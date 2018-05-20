@@ -2,45 +2,14 @@
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
+:main_sourcepath: ../../main
+:java_sourcepath: ../../main/java/org/ccguyka/docsascode
+:java_testpath: ../../test/java/org/ccguyka/docsascode
 :toc: left
 :toclevels: 3
 :sectlinks:
 
 
-== Greeting
+include::api.adoc[]
 
-include::{snippets}/greeting/curl-request.adoc[]
-include::{snippets}/greeting/http-request.adoc[]
-include::{snippets}/greeting/http-response.adoc[]
-
-include::{snippets}/greeting/response-body.adoc[]
-include::{snippets}/greeting/response-fields.adoc[]
-
-== User
-
-==== Create a new user
-
-include::{snippets}/user/create/curl-request.adoc[]
-include::{snippets}/user/create/http-request.adoc[]
-include::{snippets}/user/create/request-fields.adoc[]
-
-include::{snippets}/user/create/http-response.adoc[]
-
-=== Update user
-
-include::{snippets}/user/update/curl-request.adoc[]
-include::{snippets}/user/update/http-request.adoc[]
-include::{snippets}/user/update/path-parameters.adoc[]
-include::{snippets}/user/update/request-fields.adoc[]
-
-include::{snippets}/user/update/http-response.adoc[]
-include::{snippets}/user/update/response-fields.adoc[]
-
-=== Get user
-
-include::{snippets}/user/get/curl-request.adoc[]
-include::{snippets}/user/get/http-request.adoc[]
-include::{snippets}/user/update/path-parameters.adoc[]
-
-include::{snippets}/user/get/http-response.adoc[]
-include::{snippets}/user/get/response-fields.adoc[]
+include::tips_and_tricks.adoc[]
