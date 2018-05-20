@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.ccguyka</groupId>
@@ -10,7 +8,16 @@
     <packaging>pom</packaging>
 
     <name>docs-as-code-project</name>
-    <description>REST documentation sample project</description>
+    <description>Asccidoctor example to generate documentation</description>
+    <url>http://github.com/ccguyka/docs-as-code</url>
+    <inceptionYear>2018</inceptionYear>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <prerequisites>
         <maven>3.0.0</maven>
@@ -21,4 +28,13 @@
         <module>docs-as-code-docs</module>
     </modules>
 
+    <scm>
+        <connection>scm:git:https://github.com/ccguyka/docs-as-code.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/ccguyka/docs-as-code.git</developerConnection>
+        <url>https://github.com/ccguyka/docs-as-code</url>
+    </scm>
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/ccguyka/docs-as-code/issues</url>
+    </issueManagement>
 </project>
