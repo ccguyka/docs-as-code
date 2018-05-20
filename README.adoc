@@ -1,0 +1,11 @@
+= Docs-as-Code example project
+
+This is a project to demonstrate generation of documentation using https://asciidoctor.org/[asccidoctor].
+
+== API documentation
+
+Demonstrates the automatic generation of API documentation using https://docs.spring.io/spring-restdocs/docs/current/reference/html5/[spring REST docs].
+
+== General documentation
+
+Will create asciidoctor documentation with generation of http://plantuml.com/[plantuml] diagrams.
